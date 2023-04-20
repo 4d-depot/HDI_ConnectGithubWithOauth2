@@ -1,0 +1,18 @@
+﻿
+2023-03-17T09:02:32.791Z   *** Server started
+2023-03-17T09:02:34.379Z   *** Server closed
+2023-03-17T13:49:30.544Z   *** Server started
+2023-03-17T13:49:31.426Z   *** Server closed
+2023-03-22T13:53:26.693Z   *** Server started
+2023-03-22T13:53:28.819Z   *** New connection request from: localhost::51671
+2023-03-22T13:53:28.832Z   New client connected: Client1 - localhost::51671
+2023-03-22T13:53:30.790Z   Connection closed: Client1 - localhost::51671 - code: 1000 La WebSocket a été fermée normalement.
+2023-03-22T13:53:30.799Z   *** Server closed
+2023-03-22T14:53:46.585Z   *** Server closed
+2023-03-22T14:56:07.279Z   *** Server closed
+2023-03-22T15:11:12.771Z   *** Server closed
+2023-03-22T15:12:01.975Z   *** Server closed
+2023-03-22T15:13:09.467Z   *** Server closed
+2023-03-22T15:13:28.599Z   *** Server closed
+2023-03-22T15:17:30.676Z   *** Server closed
+2023-03-22T15:26:45.317Z   *** Server closed

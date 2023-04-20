@@ -1,0 +1,213 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 28,
+					"left": 18,
+					"width": 1020,
+					"height": 800,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 66,
+					"left": 31,
+					"width": 986,
+					"height": 688,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 66,
+					"left": 31,
+					"width": 986,
+					"height": 96,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"GHConnection": {
+					"type": "button",
+					"text": "Get Github client information",
+					"top": 181,
+					"left": 41,
+					"width": 180,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/GHConnection.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 158,
+					"top": 248,
+					"width": 610,
+					"height": 16,
+					"dataSource": "Form:C1466.userInfo.login",
+					"method": "ObjectMethods/Input.4dm",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fontWeight": "bold",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"fill": "transparent"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 158,
+					"top": 284,
+					"width": 610,
+					"height": 16,
+					"dataSource": "Form:C1466.email",
+					"method": "ObjectMethods/Input1.4dm",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 42,
+					"top": 342,
+					"width": 832,
+					"height": 425,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.repos",
+					"listboxType": "collection",
+					"columns": [
+						{
+							"header": {
+								"text": "Repository name",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.name",
+							"width": 245
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "URL"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.url",
+							"width": 569
+						}
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 226,
+					"left": 43,
+					"width": 100,
+					"height": 100,
+					"dataSource": "Form:C1466.avatarPicture",
+					"dataSourceTypeHint": "picture",
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "none",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/Variable1.4dm",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"fill": "transparent"
+				}
+			}
+		}
+	],
+	"geometryStamp": 4409,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 1039,
+	"height": 829
+}

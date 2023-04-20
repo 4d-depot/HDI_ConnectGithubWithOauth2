@@ -1,0 +1,12 @@
+//%attributes = {"invisible":true}
+C_LONGINT:C283(00_Start; $1)
+C_PICTURE:C286(DlAvatarPicture; $0)
+C_TEXT:C284(DlAvatarPicture; $1)
+C_OBJECT:C1216(GetCurrentUserInformation; $1)
+C_OBJECT:C1216(GitHubProvider; $0)
+C_OBJECT:C1216(MailAdress; $1)
+C_LONGINT:C283(MailAdress; $2)
+C_OBJECT:C1216(Repositories; $1)
+C_LONGINT:C283(Repositories; $2)
+C_OBJECT:C1216(UserInfo; $1)
+C_LONGINT:C283(UserInfo; $2)
